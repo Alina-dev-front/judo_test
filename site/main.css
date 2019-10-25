@@ -1,0 +1,22 @@
+.container {
+    position: relative;
+}
+
+.header-image {
+    height: 200px;
+    width: 100%;
+}
+
+.top-left {
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%
+}
+
+.text-center {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
