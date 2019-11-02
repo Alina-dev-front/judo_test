@@ -5,6 +5,8 @@ function checkAnswer() {
         "Ko-uchi-gari", "Hiza-guruma", "Eri-seoi-nage", "Koshi-guruma",
         "Kami-shiho-gatame", "Tate-shiho-gatame"
     ];
+    countRightAnswers = 0;
+    countWrongAnswers = 0;
 
     for (tecknicNumber = 0; tecknicNumber < tecknicsYellow.length; tecknicNumber++) {
         tecknicName = tecknicsYellow[tecknicNumber];
@@ -14,13 +16,16 @@ function checkAnswer() {
             if (radioButtonResult[i].checked) {
                 rightAnswer = radioButtonResult[i].name;
                 choicedAnswer = radioButtonResult[i].value;
-                console.log(tecknicsYellow[tecknicNumber]);
                 if (choicedAnswer == rightAnswer) {
-                    console.log("Well done!");
+                    countRightAnswers++;
                 } else {
-                    console.log("Try again");
+                    countWrongAnswers++;
                 }
             }
         }
     }
+    document.getElementById("yellowresult").style.display = "block"
+    document.getElementById("right_answers").innerHTML = countRightAnswers;
+    document.getElementById("wrong_answers").innerHTML = countWrongAnswers;
+    window.location.hash = '#yellowresult';
 }
