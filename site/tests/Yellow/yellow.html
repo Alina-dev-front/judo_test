@@ -10,14 +10,14 @@
     <header>
         <img src="../../img/header.jpg" class="header-img">
         <h2 class="home">
-            <a href="../index.html">Home</a>
+            <a href="../../index.html">Home</a>
         </h2>
         <p class="header">Yellow belt test</p>
 
     </header>
     <form action="javascript:;" onsubmit="checkAnswer();">
         <div class="container">
-            <div>
+            <div style="margin-left: 200px">
                 <img src="Yellow_img/O-soto-otoshi.jpg" class="test-image">
             </div>
             <div class="top-left">
@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class="container">
-            <div>
+            <div style="margin-left: 200px">
                 <img src="Yellow_img/O-goshi.jpg" class="test-image">
             </div>
             <div class="top-left">
@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class="container">
-            <div>
+            <div style="margin-left: 200px">
                 <img src="Yellow_img/O-uchi-gari.jpg" class="test-image">
             </div>
             <div class="top-left">
@@ -48,7 +48,7 @@
         </div>
 
         <div class="container">
-            <div>
+            <div style="margin-left: 200px">
                 <img src="Yellow_img/Mune-gatame.jpg" class="test-image">
             </div>
             <div class="top-left">
@@ -59,7 +59,7 @@
         </div>
 
         <div class="container">
-            <div>
+            <div style="margin-left: 200px">
                 <img src="Yellow_img/Kuzure-kesa-gatame.jpg" class="test-image">
             </div>
             <div class="top-left">
@@ -69,7 +69,7 @@
             </div>
         </div>
         <div class="container">
-            <div>
+            <div style="margin-left: 200px">
                 <img src="Yellow_img/Ko-soto-gari.jpg" class="test-image ">
             </div>
             <div class="top-left">
@@ -79,7 +79,7 @@
             </div>
         </div>
         <div class="container">
-            <div>
+            <div style="margin-left: 200px">
                 <img src="Yellow_img/Ko-uchi-gari.jpg" class="test-image ">
             </div>
             <div class="top-left">
@@ -89,7 +89,7 @@
             </div>
         </div>
         <div class="container">
-            <div>
+            <div style="margin-left: 200px">
                 <img src="Yellow_img/Hiza-guruma.jpg" class="test-image ">
             </div>
             <div class="top-left">
@@ -99,7 +99,7 @@
             </div>
         </div>
         <div class="container">
-            <div>
+            <div style="margin-left: 200px">
                 <img src="Yellow_img/Eri-seoi-nage.jpg" class="test-image ">
             </div>
             <div class="top-left">
@@ -109,7 +109,7 @@
             </div>
         </div>
         <div class="container">
-            <div>
+            <div style="margin-left: 200px">
                 <img src="Yellow_img/Koshi-guruma.jpg" class="test-image ">
             </div>
             <div class="top-left">
@@ -119,7 +119,7 @@
             </div>
         </div>
         <div class="container">
-            <div>
+            <div style="margin-left: 200px">
                 <img src="Yellow_img/Kami-shiho-gatame.jpg" class="test-image ">
             </div>
             <div class="top-left">
@@ -129,7 +129,7 @@
             </div>
         </div>
         <div class="container">
-            <div>
+            <div style="margin-left: 200px">
                 <img src="Yellow_img/Tate-shiho-gatame.jpg" class="test-image ">
             </div>
             <div class="top-left">
@@ -138,19 +138,21 @@
                 <input type="radio" name="Tate-shiho-gatame" value="Kami-shiho-gatame">Kami-shiho-gatame<br>
             </div>
         </div>
-        <input type="submit" value="submit">
+        <div style="text-align: center">
+            <input type="submit" value="Check answers" class="submit-button">
+        </div>
     </form>
     <div id="yellowresult" style="display: none">
-        <h1>Your result:</h1>
-        <div>
-            <p style="display: inline">Number of right answers: </p>
-            <p style="display: inline" id="right_answers"></p>
-        </div>
-        <div>
-            <p style="display: inline">Number of wrong answers: </p>
-            <p style="display: inline" id="wrong_answers"></p>
+        <div class="result-table">
+            <h1>Your result:</h1>
+            <div>
+                <p style="display: inline">Number of right answers: </p>
+                <p style="display: inline" id="right_answers"></p>
+            </div>
+            <div>
+                <p style="display: inline">Number of wrong answers: </p>
+                <p style="display: inline" id="wrong_answers"></p>
+            </div>
         </div>
     </div>
-
-
 </body>

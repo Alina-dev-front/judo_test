@@ -27,5 +27,11 @@ function checkAnswer() {
     document.getElementById("yellowresult").style.display = "block"
     document.getElementById("right_answers").innerHTML = countRightAnswers;
     document.getElementById("wrong_answers").innerHTML = countWrongAnswers;
-    window.location.hash = '#yellowresult';
+
+    resultElement = document.getElementById("yellowresult");
+    resultElement.focus();
+    resultElement.scrollIntoView();
+
+    //document.getElementById("yellowresult").focus().scrollIntoView();
+    //window.location.hash = '#yellowresult';
 }
