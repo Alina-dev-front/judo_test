@@ -24,14 +24,15 @@ function checkAnswer() {
             }
         }
     }
-    document.getElementById("yellowresult").style.display = "block"
+    document.getElementById("yellowresult").style.display = "block";
+
     document.getElementById("right_answers").innerHTML = countRightAnswers;
     document.getElementById("wrong_answers").innerHTML = countWrongAnswers;
 
-    resultElement = document.getElementById("yellowresult");
-    resultElement.focus();
-    resultElement.scrollIntoView();
+    this.scrollDown();
+}
 
-    //document.getElementById("yellowresult").focus().scrollIntoView();
-    //window.location.hash = '#yellowresult';
+function scrollDown() {
+    resultElement = document.getElementById("yellowresult");
+    resultElement.scrollIntoView();
 }
