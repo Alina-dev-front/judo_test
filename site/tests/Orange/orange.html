@@ -3,20 +3,35 @@
 <head>
     <title>Orange belt test</title>
     <link href="../test.css" rel="stylesheet">
+    <script src="orange.js"></script>
 </head>
 
-<body>
+<body onload="generateTest();">
     <header>
         <img src="../../img/header.jpg" class="header-img">
         <h2 class="home">
             <a href="../../index.html">Home</a>
         </h2>
         <p class="header">Orange belt test</p>
-
     </header>
-    <form>
+
+    <form action="javascript:;" onsubmit="checkAnswer();">
         <div id="fetch-images"></div>
-        <input type="submit" value="submit">
+        <div style="text-align: center">
+            <input type="submit" value="Check answer" class="submit-button"></div>
     </form>
+
+    <div id="orangeresult" style="display: none">
+        <div class="result-table">
+            <h1>Your result:</h1>
+            <div>
+                <p style="display: inline">Number of right answers: </p>
+                <p style="display: inline" id="right_answers"></p>
+            </div>
+            <div>
+                <p style="display: inline">Number of wrong answers: </p>
+                <p style="display: inline" id="wrong_answers"></p>
+            </div>
+        </div>
+    </div>
 </body>
-<script src="orange.js"></script>
