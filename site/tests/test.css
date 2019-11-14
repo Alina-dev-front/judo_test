@@ -57,3 +57,14 @@
     background-color: #C0C0C0;
     padding-bottom: 25px;
 }
+
+.images_approximation {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.test-image:hover {
+    transform: scale(1.3);
+}
