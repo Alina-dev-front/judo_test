@@ -1,0 +1,18 @@
+data = '[{"belt" : "green",'+
+    ' "urls" : ["Green_img/Okuri-ashi-harai.heic", "Green_img/Sasae-tsuri-komi-ashi.heic", '+
+        '"Green_img/Uki-goshi.heic", "Green_img/Sode-tsuri-komi-goshi.heic", '+
+        '"Green_img/Seoi-otoshi.heic", "Green_img/Kuzure-kami-shiho-gatame.heic", '+
+        '"Green_img/Hadaka-jime.heic", "Green_img/Okuri-eri-jime.heic", '+
+        '"Green_img/Ude-gatame-1.heic", "Green_img/Ude-gatame-2.heic", '+
+        '"Green_img/Harai-tsuri-komi-ashi.heic", "Green_img/Tani-otoshi.heic", '+
+        '"Green_img/Yoko-sumi-gaeshi.heic", "Green_img/Tomoe-nage.heic", '+
+        '"Green_img/Yoko-tomoe-nage.heic", "Green_img/Kuzure-tate-shiho-gatame.heic", '+
+        '"Green_img/Kata-ha-jime.heic", "Green_img/Ryote-jime.heic", '+
+        '"Green_img/Kesa-garami.heic", "Green_img/Ude-hishigi-ashi-gatame.heic"],'+
+    ' "names" :["Okuri-ashi-harai", "Sasae-tsuri-komi-ashi", "Uki-goshi", '+
+    '"Sode-tsuri-komi-goshi", "Seoi-otoshi", "Kuzure-kami-shiho-gatame", "hadaka-jime", '+
+    '"Okuri-eri-jime", "Ude-gatame-1", "Ude-gatame-2", "Harai-tsuri-komi-ashi", '+
+    '"Tani-otoshi", "Yoko-sumi-gaeshi", "Tomoe-nage", "Yoko-tomoe-nage", '+
+    '"Kuzure-tate-shiho-gatame", "Kata-ha-jime", "Ryote-jime", "Kesa-garami", '+
+    '"Ude-hishigi-ashi-gatame"]}'+
+    ',{"name" : "Abhinandan", "age" : "20"}]';

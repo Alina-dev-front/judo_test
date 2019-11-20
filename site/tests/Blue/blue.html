@@ -2,10 +2,42 @@
 
 <head>
     <title>Blue belt test</title>
-
+    <link href="../test.css" rel="stylesheet">
+    <script type="text/javascript" src="green.json"></script>
+    <script type="text/javascript" src="../ProgressiveTests/testGenerator.js"></script>
 </head>
 
-<body>
-    <header>Blue belt test</header>
+<body style="margin: 0" onload="generateTest();">
+    <div class="topnav">
+        <a class="active" href="../../index.html">Home</a>
+        <a href="../Yellow/yellow.html">Yellow</a>
+        <a href="../Orange/orange.html">Orange</a>
+        <a href="../Green/green.html">Green</a>
+        <a href="../Blue/blue.html">Blue</a>
+        <a href="../Brown/brown.html">Brown</a>
+    </div>
+    <header>
+        <img src="../../img/uniforms-Judo-header-banner-v1.21.png" class="header-img">
+        <p class="header">Blue belt test</p>
+    </header>
 
+    <form action="javascript:;" onsubmit="checkAnswer();">
+        <div id="fetch-images"></div>
+        <div style="text-align: center">
+            <input type="submit" value="Check answer" class="submit-button"></div>
+    </form>
+
+    <div id="test_result" style="display: none">
+        <div class="result-table">
+            <h1>Your result:</h1>
+            <div>
+                <p style="display: inline">Number of right answers: </p>
+                <p style="display: inline" id="right_answers"></p>
+            </div>
+            <div>
+                <p style="display: inline">Number of wrong answers: </p>
+                <p style="display: inline" id="wrong_answers"></p>
+            </div>
+        </div>
+    </div>
 </body>
