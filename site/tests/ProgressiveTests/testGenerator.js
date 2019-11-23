@@ -1,9 +1,15 @@
-var mydata = JSON.parse(tecknicsArray);
+var tecknicsName = "";
+var imagesLink = "";
 
-var imagesLink = mydata[0].urls
-var tecknicsName = mydata[0].names
+function generateTest(beltColor) {
+    var mydata = JSON.parse(tecknicsArray);
+    for (i = 0; i < mydata.length; i++) {
+        if (mydata[i].belt == beltColor) {
+            self.imagesLink = mydata[i].urls;
+            self.tecknicsName = mydata[i].names;
+        }
+    }
 
-function generateTest() {
     myHTML = '';
     var element = document.getElementById("fetch-images");
 
@@ -17,7 +23,7 @@ function generateTest() {
         randomRangeTecknics = [tecknicsName[i], tecknicsName[firstIndex], tecknicsName[secondIndex]];
 
         newRandomRangeTecknics = this.sortArrayRandom(randomRangeTecknics);
-        myHTML += '<div class="container"  id='+tecknicsName[i]+'><div style="margin-left: 200px" id="image-id"><img src=' +
+        myHTML += '<div class="container"  id=' + tecknicsName[i] + '><div style="margin-left: 200px" id="image-id"><img src=' +
             imagesLink[i] + ' class="test-image"></div>' + '<div class="top-left">' +
 
             '<input type="radio" name=' + tecknicsName[i] + ' value=' + newRandomRangeTecknics[0] +
@@ -53,6 +59,7 @@ function sortArrayRandom(array) {
 }
 
 function checkAnswer() {
+    console.log('cykablya');
     countRightAnswers = 0;
     countWrongAnswers = 0;
     wrongAnswers = [];
@@ -72,7 +79,7 @@ function checkAnswer() {
             }
         }
     }
-    for (i=0; i < wrongAnswers.length; i++) {
+    for (i = 0; i < wrongAnswers.length; i++) {
         document.getElementById(wrongAnswers[i]).style.backgroundColor = "red";
     }
     document.getElementById("test_result").style.display = "block";

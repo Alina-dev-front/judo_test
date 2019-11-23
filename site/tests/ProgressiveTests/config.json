@@ -1,0 +1,38 @@
+tecknicsArray = '[{"belt" : "green",'+
+    ' "urls" : ["../Green/Green_img/Okuri-ashi-harai.heic", "../Green/Green_img/Sasae-tsuri-komi-ashi.heic", '+
+        '"../Green/Green_img/Uki-goshi.heic", "../Green/Green_img/Sode-tsuri-komi-goshi.heic", '+
+        '"../Green/Green_img/Seoi-otoshi.heic", "../Green/Green_img/Kuzure-kami-shiho-gatame.heic", '+
+        '"../Green/Green_img/Hadaka-jime.heic", "../Green/Green_img/Okuri-eri-jime.heic", '+
+        '"../Green/Green_img/Ude-gatame-1.heic", "../Green/Green_img/Ude-gatame-2.heic", '+
+        '"../Green/Green_img/Harai-tsuri-komi-ashi.heic", "../Green/Green_img/Tani-otoshi.heic", '+
+        '"../Green/Green_img/Yoko-sumi-gaeshi.heic", "../Green/Green_img/Tomoe-nage.heic", '+
+        '"../Green/Green_img/Yoko-tomoe-nage.heic", "../Green/Green_img/Kuzure-tate-shiho-gatame.heic", '+
+        '"../Green/Green_img/Kata-ha-jime.heic", "../Green/Green_img/Ryote-jime.heic", '+
+        '"../Green/Green_img/Kesa-garami.heic", "../Green/Green_img/Ude-hishigi-ashi-gatame.heic"],'+
+    ' "names" :["Okuri-ashi-harai", "Sasae-tsuri-komi-ashi", "Uki-goshi", '+
+    '"Sode-tsuri-komi-goshi", "Seoi-otoshi", "Kuzure-kami-shiho-gatame", "hadaka-jime", '+
+    '"Okuri-eri-jime", "Ude-gatame-1", "Ude-gatame-2", "Harai-tsuri-komi-ashi", '+
+    '"Tani-otoshi", "Yoko-sumi-gaeshi", "Tomoe-nage", "Yoko-tomoe-nage", '+
+    '"Kuzure-tate-shiho-gatame", "Kata-ha-jime", "Ryote-jime", "Kesa-garami", '+
+    '"Ude-hishigi-ashi-gatame"]}'+
+    ',{"belt" : "blue", '+
+    '"urls" : ["../Blue/Blue_img/O-guruma.heic", "../Blue/Blue_img/Ashi-guruma.heic", '+
+        '"../Blue/Blue_img/Sumi-gaeshi.heic", "../Blue/Blue_img/Uki-waza.heic", "../Blue/Blue_img/Yoko-otoshi.heic", '+
+        '"../Blue/Blue_img/Ushiro-goshi.heic", "../Blue/Blue_img/Soto-makikomi.heic", '+
+        '"../Blue/Blue_img/Makura-kesa-gatame.heic", "../Blue/Blue_img/Sankaku-gatame.heic", '+
+        '"../Blue/Blue_img/Kata-te-jime.heic", "../Blue/Blue_img/Sankaku-jime.heic", '+
+        '"../Blue/Blue_img/Hara-gatame.heic", "../Blue/Blue_img/Waki-gatame.heic", "../Blue/Blue_img/Uchi-mata.heic", '+
+        '"../Blue/Blue_img/Hane-goshi.heic", "../Blue/Blue_img/Tsubame-geashi.heic", "../Blue/Blue_img/Ura-nage.heic", '+
+        '"../Blue/Blue_img/Yoko-guruma.heic", "../Blue/Blue_img/Yoko-gake.heic", "../Blue/Blue_img/Kata-gatame.heic", '+
+        '"../Blue/Blue_img/Uki-gatame.heic", "../Blue/Blue_img/Sode-guruma-jime.heic", '+
+        '"../Blue/Blue_img/Tsukomi-jime.heic", "../Blue/Blue_img/Kannuki-gatame.heic", '+
+        '"../Blue/Blue_img/Hiza-gatame.heic"], '+
+        ' "names" :["O-guruma", "Ashi-guruma", "Sumi-gaeshi", "Uki-waza", "Yoko-otoshi", '+
+            '"Ushiro-goshi", "Soto-makikomi", "Makura-kesa-gatame", "Sankaku-gatame", '+
+            '"Kata-te-jime", "Sankaku-jime", "Hara-gatame", "Waki-gatame", "Uchi-mata", '+
+            '"Hane-goshi", "Tsubame-geashi", "Ura-nage", "Yoko-guruma", "Yoko-gake", '+
+            '"Kata-gatame", "Uki-gatame", "Sode-guruma-jime", "Tsukomi-jime", '+
+            '"Kannuki-gatame", "Hiza-gatame"]}]';
+
+          
+            
