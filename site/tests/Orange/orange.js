@@ -33,7 +33,7 @@
             randomRangeTecknics = [tecknicsOrange[i], tecknicsOrange[firstIndex], tecknicsOrange[secondIndex]];
 
             newRandomRangeTecknics = this.sortArrayRandom(randomRangeTecknics);
-            myHTML += '<div class="container"><div style="margin-left: 200px" id="image-id"><img src=' +
+            myHTML += '<div class="container" id='+tecknicsOrange[i]+'><div style="margin-left: 200px" id="image-id"><img src=' +
                 imagesLink[i] + ' class="test-image"></div>' + '<div class="top-left">' +
 
                 '<input type="radio" name=' + tecknicsOrange[i] + ' value=' + newRandomRangeTecknics[0] +
@@ -71,6 +71,7 @@
     function checkAnswer() {
         countRightAnswers = 0;
         countWrongAnswers = 0;
+        wrongAnswers = [];
 
         for (var tecknicNumber = 0; tecknicNumber < tecknicsOrange.length; tecknicNumber++) {
             tecknicName = tecknicsOrange[tecknicNumber];
@@ -82,9 +83,14 @@
                         countRightAnswers++;
                     } else {
                         countWrongAnswers++;
+                        wrongAnswers.push(radioButtonResult[i].name)
                     }
                 }
             }
+        }
+
+        for (i=0; i < wrongAnswers.length; i++) {
+            document.getElementById(wrongAnswers[i]).style.backgroundColor = "#E8624F";
         }
         document.getElementById("orangeresult").style.display = "block";
         document.getElementById("right_answers").innerHTML = countRightAnswers;

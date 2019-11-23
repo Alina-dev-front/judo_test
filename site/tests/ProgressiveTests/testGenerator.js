@@ -1,7 +1,7 @@
-var mydata = JSON.parse(data);
+var mydata = JSON.parse(tecknicsArray);
 
 var imagesLink = mydata[0].urls
-var tecknicsOrange = mydata[0].names
+var tecknicsName = mydata[0].names
 
 function generateTest() {
     myHTML = '';
@@ -10,23 +10,23 @@ function generateTest() {
     for (i = 0; i < imagesLink.length; i++) {
         excludeArray = [];
         excludeArray.push(i);
-        firstIndex = this.generateRandomWithExclude(0, tecknicsOrange.length - 1, excludeArray);
+        firstIndex = this.generateRandomWithExclude(0, tecknicsName.length - 1, excludeArray);
         excludeArray.push(firstIndex);
-        secondIndex = this.generateRandomWithExclude(0, tecknicsOrange.length - 1, excludeArray);
+        secondIndex = this.generateRandomWithExclude(0, tecknicsName.length - 1, excludeArray);
 
-        randomRangeTecknics = [tecknicsOrange[i], tecknicsOrange[firstIndex], tecknicsOrange[secondIndex]];
+        randomRangeTecknics = [tecknicsName[i], tecknicsName[firstIndex], tecknicsName[secondIndex]];
 
         newRandomRangeTecknics = this.sortArrayRandom(randomRangeTecknics);
-        myHTML += '<div class="container"><div style="margin-left: 200px" id="image-id"><img src=' +
+        myHTML += '<div class="container"  id='+tecknicsName[i]+'><div style="margin-left: 200px" id="image-id"><img src=' +
             imagesLink[i] + ' class="test-image"></div>' + '<div class="top-left">' +
 
-            '<input type="radio" name=' + tecknicsOrange[i] + ' value=' + newRandomRangeTecknics[0] +
+            '<input type="radio" name=' + tecknicsName[i] + ' value=' + newRandomRangeTecknics[0] +
             '>' + newRandomRangeTecknics[0] + '<br>' +
 
-            '<input type="radio" name=' + tecknicsOrange[i] + ' value=' + newRandomRangeTecknics[1] +
+            '<input type="radio" name=' + tecknicsName[i] + ' value=' + newRandomRangeTecknics[1] +
             '>' + newRandomRangeTecknics[1] + '<br>' +
 
-            '<input type="radio" name=' + tecknicsOrange[i] + ' value=' + newRandomRangeTecknics[2] +
+            '<input type="radio" name=' + tecknicsName[i] + ' value=' + newRandomRangeTecknics[2] +
             '>' + newRandomRangeTecknics[2] + '<br>' +
             '</div></div>'
     }
@@ -55,9 +55,10 @@ function sortArrayRandom(array) {
 function checkAnswer() {
     countRightAnswers = 0;
     countWrongAnswers = 0;
+    wrongAnswers = [];
 
-    for (var tecknicNumber = 0; tecknicNumber < tecknicsOrange.length; tecknicNumber++) {
-        tecknicName = tecknicsOrange[tecknicNumber];
+    for (var tecknicNumber = 0; tecknicNumber < tecknicsName.length; tecknicNumber++) {
+        tecknicName = tecknicsName[tecknicNumber];
         radioButtonResult = document.getElementsByName(tecknicName);
 
         for (i = 0; i < radioButtonResult.length; i++) {
@@ -66,9 +67,13 @@ function checkAnswer() {
                     countRightAnswers++;
                 } else {
                     countWrongAnswers++;
+                    wrongAnswers.push(radioButtonResult[i].name)
                 }
             }
         }
+    }
+    for (i=0; i < wrongAnswers.length; i++) {
+        document.getElementById(wrongAnswers[i]).style.backgroundColor = "red";
     }
     document.getElementById("test_result").style.display = "block";
     document.getElementById("right_answers").innerHTML = countRightAnswers;
