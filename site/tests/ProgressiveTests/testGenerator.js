@@ -23,7 +23,7 @@ function generateTest(beltColor) {
         randomRangeTecknics = [tecknicsName[i], tecknicsName[firstIndex], tecknicsName[secondIndex]];
 
         newRandomRangeTecknics = this.sortArrayRandom(randomRangeTecknics);
-        myHTML += '<div class="container"  id=' + tecknicsName[i] + '><div style="margin-left: 200px" id="image-id"><img src=' +
+        myHTML += '<div class="container"  id=' + tecknicsName[i] + '><div id="image-id"><img src=' +
             imagesLink[i] + ' class="test-image"></div>' + '<div class="top-left">' +
 
             '<label><input type="radio" name=' + tecknicsName[i] + ' value=' + newRandomRangeTecknics[0] +

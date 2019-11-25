@@ -33,7 +33,7 @@
             randomRangeTecknics = [tecknicsOrange[i], tecknicsOrange[firstIndex], tecknicsOrange[secondIndex]];
 
             newRandomRangeTecknics = this.sortArrayRandom(randomRangeTecknics);
-            myHTML += '<div class="container" id='+tecknicsOrange[i]+'><div style="margin-left: 200px" id="image-id"><img src=' +
+            myHTML += '<div class="container" id=' + tecknicsOrange[i] + '><div id="image-id"><img src=' +
                 imagesLink[i] + ' class="test-image"></div>' + '<div class="top-left">' +
 
                 '<label><input type="radio" name=' + tecknicsOrange[i] + ' value=' + newRandomRangeTecknics[0] +
@@ -89,7 +89,7 @@
             }
         }
 
-        for (i=0; i < wrongAnswers.length; i++) {
+        for (i = 0; i < wrongAnswers.length; i++) {
             document.getElementById(wrongAnswers[i]).style.backgroundColor = "#E8624F";
         }
         document.getElementById("orangeresult").style.display = "block";
