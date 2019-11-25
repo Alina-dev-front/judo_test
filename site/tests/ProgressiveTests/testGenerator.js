@@ -26,14 +26,14 @@ function generateTest(beltColor) {
         myHTML += '<div class="container"  id=' + tecknicsName[i] + '><div style="margin-left: 200px" id="image-id"><img src=' +
             imagesLink[i] + ' class="test-image"></div>' + '<div class="top-left">' +
 
-            '<input type="radio" name=' + tecknicsName[i] + ' value=' + newRandomRangeTecknics[0] +
-            '>' + newRandomRangeTecknics[0] + '<br>' +
+            '<label><input type="radio" name=' + tecknicsName[i] + ' value=' + newRandomRangeTecknics[0] +
+            '>' + newRandomRangeTecknics[0] + '</label><br>' +
 
-            '<input type="radio" name=' + tecknicsName[i] + ' value=' + newRandomRangeTecknics[1] +
-            '>' + newRandomRangeTecknics[1] + '<br>' +
+            '<label><input type="radio" name=' + tecknicsName[i] + ' value=' + newRandomRangeTecknics[1] +
+            '>' + newRandomRangeTecknics[1] + '</label><br>' +
 
-            '<input type="radio" name=' + tecknicsName[i] + ' value=' + newRandomRangeTecknics[2] +
-            '>' + newRandomRangeTecknics[2] + '<br>' +
+            '<label><input type="radio" name=' + tecknicsName[i] + ' value=' + newRandomRangeTecknics[2] +
+            '>' + newRandomRangeTecknics[2] + '</label><br>' +
             '</div></div>'
     }
     element.innerHTML = myHTML;
