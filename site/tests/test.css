@@ -32,6 +32,7 @@
         .test-image {
             width: 30%;
             height: 200px;
+            margin-left: 20%;
         }
         
         .submit-button {
@@ -99,11 +100,17 @@
             font-family: Verdana;
             font-size: 12px;
             border-radius: 5px;
+            display: block;
         }
-        /* .wrong_answers {
-        border: 2px solid rgb(172, 5, 5);
-        background-color: coral;
-    } */
+        
+        .topbutton-mobil {
+            display: none;
+        }
+        
+        iframe {
+            border-width: 0px;
+            width: 100%;
+        }
         
         @media screen and (max-width: 481px) {
             .container {
@@ -136,6 +143,7 @@
             .test-image {
                 width: 60%;
                 height: 200px;
+                margin-left: 2px;
             }
             .submit-button {
                 color: black;
@@ -182,8 +190,8 @@
                 background-color: #ddd;
                 color: black;
             }
-            .topbutton {
-                width: 80px;
+            .topbutton-mobil {
+                width: 30px;
                 border: 2px solid #ccc;
                 background: #f7f7f7;
                 text-align: center;
@@ -196,5 +204,9 @@
                 font-family: Verdana;
                 font-size: 12px;
                 border-radius: 5px;
+                display: block;
+            }
+            .topbutton {
+                display: none;
             }
         }

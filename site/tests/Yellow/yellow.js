@@ -24,8 +24,8 @@ function checkAnswer() {
             }
         }
     }
-    document.getElementById("yellowresult").style.display = "block";
 
+    document.getElementById("yellowresult").style.display = "block";
     document.getElementById("right_answers").innerHTML = countRightAnswers;
     document.getElementById("wrong_answers").innerHTML = countWrongAnswers;
 

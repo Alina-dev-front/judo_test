@@ -80,7 +80,7 @@ function checkAnswer() {
         }
     }
     for (i = 0; i < wrongAnswers.length; i++) {
-        document.getElementById(wrongAnswers[i]).style.backgroundColor = "red";
+        document.getElementById(wrongAnswers[i]).style.backgroundColor = "#E8624F";
     }
     document.getElementById("test_result").style.display = "block";
     document.getElementById("right_answers").innerHTML = countRightAnswers;
