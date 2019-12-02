@@ -1,1 +1,1 @@
-## This is JUDO TEST!!!!!
+This site is primarily my training project. With each next step, I went deeper into front-end development technologies and implemented them in my project. Professionals can take a look at my code and find some not elegant solutions. I deliberately did not fix the old code, because I believe that this shows my evolution as a developer.
