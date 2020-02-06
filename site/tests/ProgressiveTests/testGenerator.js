@@ -59,7 +59,6 @@ function sortArrayRandom(array) {
 }
 
 function checkAnswer() {
-    console.log('cykablya');
     countRightAnswers = 0;
     countWrongAnswers = 0;
     wrongAnswers = [];
