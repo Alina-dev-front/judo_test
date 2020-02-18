@@ -11,8 +11,6 @@ function generateTest(beltColor) {
     }
 
     myHTML = '';
-    var element = document.getElementById("fetch-images");
-
     for (i = 0; i < imagesLink.length; i++) {
         excludeArray = [];
         excludeArray.push(i);
@@ -36,6 +34,7 @@ function generateTest(beltColor) {
             '>' + newRandomRangeTecknics[2] + '</label><br>' +
             '</div></div>'
     }
+    var element = document.getElementById("fetch-images");
     element.innerHTML = myHTML;
 }
 
