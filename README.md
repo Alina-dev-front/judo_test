@@ -6,3 +6,4 @@ On the main page I used only HTML and CSS.
 On the yellow belt page I began to implement JavaScript, but only to count answers and output the result.
 Starting with the orange belt I had already a deeper understanding of JavaScript and its functions. I was able to create a loop that is responsible for displaying the necessary techniques to the user in a different order.
 For the green, blue and brown belts I created a common JavaScript file that loads the necessary data from the right array for the appropriate level.
+http://yakimsan.beget.tech/index.html
